@@ -5,6 +5,6 @@ This repository contains all my completed workshops and exercises for the **Dyna
 ## Folders
 
 - [WS1-JavaScript](./WS1-JavaScript) – Workshop 1 exercises  
-- [Examples](./Examples) – Example for practice
+- [Examples](./Examples) – Examples for practice
 
 The purpose of this repository is to track my progress in learning JavaScript and web development.
