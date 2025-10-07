@@ -1,1 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Random Image Exercise</title>
+</head>
+<body>
+    <h1>Random Image Exercise</h1>
+
+    <p><strong>Instructions: </strong>Array of image URLs, pick random with Math.random(), set img src. Explanation: Arrays hold list; random index picks one. DOM changes img attribute.</p>
+
+    <!-- Image element with attribute "randomImage"that is used inside the script -->  
+    <img id="randomImage" alt="Random Image" width="400" height="300">
+
+
+    <p>Refresh the page to display another image!</p>
+
+  
+    <script>
+        // Array of image URLs (a list that holds different URLs).
+        // In this case it as declared as a constant variable because we won't change it
+        const images = [
+            "https://images.pexels.com/photos/32276235/pexels-photo-32276235.jpeg",
+            "https://images.pexels.com/photos/31728429/pexels-photo-31728429.jpeg",
+            "https://images.pexels.com/photos/34168748/pexels-photo-34168748.jpeg",
+            "https://images.pexels.com/photos/34118815/pexels-photo-34118815.jpeg"
+    ];
+        // Another constant variable (randomIndex) is used for calculating random number to pick an image
+        // We have 4 image URLs in this array, so indexes that can be picked are 0, 1, 2 or 3
+        // Image length is 4 (it includes indexes 0, 1, 2 and 3) and Math.random picks them randomly
+        const randomIndex = Math.floor(Math.random() * images.length);
+
+        //Using the DOM to search for img element with id "randomImage" so that it can be rewritten
+        const imgElement = document.getElementById("randomImage");
+
+        //A random image is picked from the array and displayed in the browser
+        imgElement.src = images[randomIndex];
+
+    </script>
+
+</body>
+</html>
+
 
