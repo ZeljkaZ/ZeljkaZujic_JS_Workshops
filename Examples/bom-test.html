@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>BOM Test</title>
+</head>
+<body>
+  <h1>Browser Info Demo</h1>
+
+  <script>
+    // Show browser info on the page
+    document.write("Your browser info: " + navigator.userAgent + "<br>");
+
+    // Log browser info in the console as well
+    console.log("Navigator object:", navigator);
+
+    console.log(window.innerWidth); // Browser inner width
+    console.log(window.screen.width); // Screen width
+  </script>
+
+  <!-- History buttons -->
+   <h2>Back/Forward navigation demo</h2>
+  <button onclick="history.back()">Back</button>
+  <button onclick="history.forward()">Forward</button>
+
+  <h2>Location Demo</h2>
+  <button onclick="location.href='https://www.google.com'">Go to Google</button>
+
+
+</body>
+</html>
