@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Repeating Text Exercise</title>
+</head>
+<body>
+  <h1>Repeating Text Exercise</h1>
+  <p><strong>Instructions:</strong> Create <i>repeatingText()</i> to write text 30 times. Explanation: Function reuses code; loop (for) repeats. Call function to run. </p>
+  
+  <script>
+    function repeatingText(){
+        for(let i=0; i<30; i++)
+        // i is index, so we start at the 0, the loop repeats as long as index is smaler than 30. 
+        // if we want text to be repeated 30 times, we could also write i<=29 as a condition. 
+        // i++ equals to i+=1 or i=i+1 - it means that index increses by 1 in each iteration
+        document.write("Hello! ")
+    }
+    // Calling the function
+    repeatingText()
+  </script>
+</body>
+</html>
+
