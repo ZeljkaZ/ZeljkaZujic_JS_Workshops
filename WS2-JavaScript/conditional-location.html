@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Conditional Location Exercise</title>
+</head>
+<body>
+  <h1>Conditional Location Exercise</h1>
+  <p><strong>Instructions: </strong>If navigator.userAgent includes "Mozilla", redirect to media page. Explanation: Check browser type, location.href changes URL like clicking link.</p>
+  <script>
+        // Displaying browser information
+        document.write("This is my browser info: " + navigator.userAgent + " ");
+
+        //Creating function for detecting Mozilla and redirecting to another page
+        //If "Mozilla" is detected in the output, the function in the script will redirect the browser to Wikipedia page.
+        function checkAndRedirect() {
+            if (navigator.userAgent.includes("Mozilla")) {
+                location.href = "https://en.wikipedia.org/wiki/BOM";
+            }     
+        }
+
+        // Calling the function
+        checkAndRedirect()
+  </script>
+
+</body>
+</html>
