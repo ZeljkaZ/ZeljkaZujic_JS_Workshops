@@ -1,26 +1,30 @@
 <!DOCTYPE html>
 <html>
-<body>
+  <body>
     <h1>Debugging Challenge</h1>
+    <p>
+      The purpose of this task is to find errors in JavaScript part of the code.
+    </p>
+
     <script>
-        // This code had some errors and inconsistencies. Comments are explaining what was fixed!
-        let i = 5; //Semi-colon was missing
-        let j = 10; //Semi-colon missing
-        let k = 25;
-        let l = "Joe"; // Joe is a string, so it needs to be written inside quotation marks
-        const arr = [3, 5, 7];
-        if (i < j) {
-            console.log("i");
-        } else if (j > k) {
-            console.log("k");
-        } else {
-            console.log("j"); //Quotation mark was missing
-        }
-        for (let i = 0; i <= 2; ++i) { // Explanation bellow
-            console.log(arr[i]);
-        }
-        // Array in JS is similar to lists in Python, both use indexing starting from 0. In this case loop tried accessing the fourth index that does not exist because i was set to <=3 and Console showed "undefined" after printing existing values. I changed it to i<=2 (meaning 0, 1, 2).
-        //This source explain indexing in Array. https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array 
+      // This code had some errors and inconsistencies. Comments are explaining what was fixed!
+      let i = 5; //Semi-colon was missing. The best practice is to always include semi-colon at the end of each JavaScript statement.
+      let j = 10; //Semi-colon missing. Same explanation as above.
+      let k = 25;
+      let l = "Joe"; // Joe is a string type, so it needs to be written inside quotation marks.
+      const arr = [3, 5, 7];
+      if (i < j) {
+        console.log("i");
+      } else if (j > k) {
+        console.log("k");
+      } else {
+        console.log("j"); //Quotation mark was missing
+      }
+      for (let i = 0; i <= 2; ++i) { //Explanation bellow
+        console.log(arr[i]);
+      }
+      // // Array in JS is similar to list in Python, both use indexing starting from 0. In this case loop tried accessing the fourth index that does not exist because i was set to <=3 and Console showed "undefined" after printing existing values. I changed it to i<=2 (meaning 0, 1, 2).
+      //This source explain indexing in Array. https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array
     </script>
-</body>
+  </body>
 </html>

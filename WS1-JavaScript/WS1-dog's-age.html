@@ -1,26 +1,38 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
     <title>Workshop 1</title>
-</head>
-<body>
+  </head>
+  <body>
     <h1>Workshop 1 Indenpendent Exercise</h1>
     <h2>Task description:</h2>
-    <p>Write a JavaScript function that takes a person's age as an argument and returns their age in dog years. Assume one human year is equal to seven dog years.</p>
+    <p>
+      Write a JavaScript function that takes a person's age as an argument and
+      returns their age in dog years. Assume one human year is equal to seven
+      dog years.
+    </p>
     <h3>Hint:</h3>
-    <p>Function takes input (age), multiplies by 7, returns result. Call it with different ages to test.</p>
+    <p>
+      Function takes input (age), multiplies by 7, returns result. Call it with
+      different ages to test.
+    </p>
+
+    <!--JavaScript code can be written inside script element or in a separate js file.-->
 
     <script>
-       function calculateDogYears(humanAge){
-        console.log(humanAge * 7);
-       }
+      // This function calculates dog years
+      // humanAge is the parametar of the function; it is like a temporary vatiable that can be changed
+      // The function return output that is calculated by multiplying humanAge with number 7
+      function calculateDogYears(humanAge) {
+        return humanAge * 7;
+      }
 
-       //Calling the function - the output can bee seen in Console
-       calculateDogYears(12); 
-       calculateDogYears(16);
-       calculateDogYears(33);
-       calculateDogYears(14);
-
+      // Calling the function with different parameters. The output can bee seen in Console
+      console.log(calculateDogYears(12));
+      console.log(calculateDogYears(5));
+      console.log(calculateDogYears(18));
+      console.log(calculateDogYears(22));
+      console.log(calculateDogYears(68));
     </script>
-</body>
+  </body>
 </html>
