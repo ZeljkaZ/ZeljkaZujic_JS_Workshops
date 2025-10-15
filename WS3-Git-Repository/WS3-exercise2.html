@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>HTML Event Attributes</title>
+    <!--This page explains different html attributes, such as onclick, onfocus and onsubmit.
+    They are added directly to elements and specify what JavaScript code will be executed-->
+  </head>
+  <body>
+    <h1>Event Attributes Demo</h1>
+    <input type="text" onfocus="alert('Input focused!')" />
+    <!-- Input field with onfocus attribute. When the input field gets focus, it triggers an alert -->
+    <form onsubmit="alert('Form submitted!'); return false;">
+      <!-- Form with onsubmit attribute. When submit is clickes, the alers pops up-->
+      <input type="text" placeholder="Enter name" />
+      <button type="submit">Submit</button>
+    </form>
+    <button onmouseover="alert('Mouse over!')" onmouseout="alert('Mouse out!')">
+      Hover Button
+    </button>
+    <!-- Button with onmouseover and onmouseout attributes. 
+     Different alerts pop up, based on whether we are hovering over a button or not -->
+  </body>
+</html>

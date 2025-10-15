@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Named Functions for Events</title>
+    <!--Named functions for events are used to simplify event handling.
+    They are defined inside JavaScript block of code (between script tags)
+    and called from the attribute-->
+  </head>
+  <body>
+    <h1>Named Function Demo</h1>
+    <p>What is the name(s) of your browser?</p>
+    <button onclick="myFunction()">Try it</button>
+    <!--Here we have button element with onclick attribute.
+    Onclick event triggers JavaScript function that is called from the attribute-->
+
+    <p id="demo"></p>
+    <!-- Here is the output from the function displayed -->
+
+    <script>
+      function myFunction() {
+        // This function gets user's browser info using navigator (BOM)
+        document.write("Name is " + navigator.appName); // document.write() writes the output of the function into html page
+        document.write("<br>Code name is " + navigator.appCodeName); // not advisable to use after page is loades as it will overwrite the entire page!
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Basic HTML Events Example</title>
+    <!--This html demonstrates what are events in HTML. 
+        Events are actions that are triggered by user or browser that JavaScript can respond to.-->
+  </head>
+  <body>
+    <h1>Common Events Demo</h1>
+    <p>Page loaded! (onload event)</p>
+    <input type="text" id="myInput" onchange="alert('Input changed!')" />
+    <!-- Alerts appear whenever input is changed. -->
+
+    <button onclick="alert('Button clicked!')">Click Me</button>
+    <!-- Alerts appear whenever button is clicked. -->
+    <p
+      onmouseover="this.style.color='red'"
+      onmouseout="this.style.color='black'"
+    >
+      Hover over me!
+    </p>
+    <!-- When mouse is hovered over the paragraph, it changes color to red, 
+     but when pointer is removed, it returns to black -->
+    <script>
+      // Onload happens when the entire page is finished loading.
+      window.onload = function () {
+        document.body.innerHTML += "<p>JS onload triggered!</p>";
+      };
+    </script>
+  </body>
+</html>

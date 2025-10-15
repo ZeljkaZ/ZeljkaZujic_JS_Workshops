@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Multiple Listeners</title>
+  </head>
+  <body>
+    <button id="a">Click for Multiple</button>
+    <!--Getting the button element by its ID-->
+    <script>
+      var element = document.getElementById("a");
+      // Using onclick property. Only one function can be used at a time
+      element.onclick = function () {
+        alert("First!");
+      };
+      element.onclick = function () {
+        alert("Second!");
+      }; // Only this one will run
+
+      // Using addEventListener. We can add many functions to the same event
+      element.addEventListener("click", function () {
+        // This one will go first
+        alert("Third!");
+      });
+      element.addEventListener("click", function () {
+        // This one will replace the first one
+        alert("Fourth!");
+      });
+    </script>
+  </body>
+</html>

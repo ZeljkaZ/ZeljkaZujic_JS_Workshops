@@ -7,5 +7,6 @@ This repository contains all my completed workshops and exercises for the **Dyna
 - [Examples](./Examples) – Examples for practice
 - [WS1-JavaScript](./WS1-JavaScript) – Workshop 1 exercises
 - [WS2-JavaScript-DOM-BOM](./WS2-JavaScript-DOM-BOM) - Workshop 2 Exercises
+- [WS3-Git-Repository](./WS3-Git_repository) - Workshop 3 Exercises
 
 The purpose of this repository is to track my progress in learning JavaScript and web development.

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Common Events List</title>
+  </head>
+  <body onload="alert('Page loaded!')">
+    <!-- Onload event is triggered when the page is fully loaded. Alert pops up. -->
+    <h1>Common Events</h1>
+    <select onchange="alert('Selection changed!')">
+      <!-- Onchange event is triggered when there is a choice between different options -->
+      <option>Option 1</option>
+      <option>Option 2</option>
+    </select>
+    <img
+      src="image.jpg"
+      onmouseover="this.src='image1.jpeg'"
+      onmouseout="this.src='image2.jpeg'"
+      alt="Hover Image"
+    />
+    <!-- Onmouseover/out are events that trigger when image is hovered over.
+     One image gets replaced by the other.
+     I added 2 different images (one in color and other black and white) to demonstrate this-->
+
+    <input type="text" onkeydown="alert('Key down!')" />
+    <!-- Onkeydown event is triggered on text input -->
+  </body>
+</html>
