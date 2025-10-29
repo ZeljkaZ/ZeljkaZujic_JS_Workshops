@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dynamic Elements</title>
+  </head>
+  <body>
+    <h1>Dynamic Element Creation Demonstration</h1>
+    <button id="addParagraphBtn">Add new paragraph</button>
+    <button id="addListItemBtn">Add new list item</button>
+    <ul id="myList">
+      <li>Existing List Item 1</li>
+    </ul>
+
+    <script>
+      // 1st example - adding new paragraph
+      let paragraphCount = 0;
+      document
+        .getElementById("addParagraphBtn")
+        .addEventListener("click", () => {
+          // Adding event listener to the button trigger the addition of new paragraph
+          // Creating the new paragraph
+          const newParagraph = document.createElement("p"); // New paragraph is created
+
+          //Adding content and styling
+          paragraphCount += 1; // Deciding paragraph number (starts from the number of paragraphs that we already have on our page and then adds 1 for the each new paragraph)
+          newParagraph.textContent = `Dynamically created paragraph number ${paragraphCount}`;
+          newParagraph.style.color = "blue"; // Changing color of the new paragraph
+
+          //Adding paragraph to the page
+          document.body.appendChild(newParagraph);
+        });
+
+      // 2nd example - adding new list item
+      let listItemCount = 1;
+      document
+        .getElementById("addListItemBtn")
+        .addEventListener("click", () => {
+          //Adding event listener to the button to trigger the addition of new list item
+          //Creating new list item
+          const newListItem = document.createElement("li");
+
+          //Adding content to the new list item
+          listItemCount += 1; // The number increases by 1 with each new list item
+          newListItem.textContent = `New list item ${listItemCount}`;
+
+          //Adding new list item to the list
+          const myList = document.getElementById("myList");
+          myList.appendChild(newListItem);
+        });
+    </script>
+  </body>
+</html>

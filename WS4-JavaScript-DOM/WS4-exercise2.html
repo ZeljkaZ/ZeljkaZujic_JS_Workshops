@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Finding Elements</title>
+  </head>
+  <body>
+    <h1 id="unique-id">My Unique Heading</h1>
+    <!--This element has a unique id-->
+    <p class="info-text">First info paragraph.</p>
+    <!--These two <p> elements belong to the same class-->
+    <p class="info-text">Second info paragraph.</p>
+
+    <div>A simple div element.</div>
+    <ul>
+      <li>List Item 1</li>
+      <li>List Item 2</li>
+    </ul>
+
+    <script>
+      // Getting a single element by ID
+      const uniqueHeading = document.getElementById("unique-id");
+      console.log("Element by ID: ", uniqueHeading.textContent); //Console reads the content of element in question
+
+      // Getting elements by Class Name (HTML Collection)
+      const infoParagraphs = document.getElementsByClassName("info-text");
+      console.log("Elements By Class Name: ", infoParagraphs[0].textContent); //Console shows the content of the 1st paragrah element
+
+      //Getting element by Tag Name
+      const allParagraphs = document.getElementsByTagName("p");
+      console.log(
+        "Elements by Tag Name (all paragraphs): ",
+        allParagraphs.length //Console shows the number of paragraphs (elements with the tag in question)
+      );
+
+      //Query selector (first match)
+      const firstDiv = document.querySelector("div"); //Query selector looks for the first element with certain property (in this example, it returns the first div element on HTML page)
+      console.log("First div by Query Selector: ", firstDiv.textContent); //Console shows the content of the first <div> element
+
+      //Query selector All (NodeList)
+      const allListItems = document.querySelectorAll("ul li");
+      console.log(
+        "All List Items by Query Selector All: ",
+        allListItems.length
+      ); //Console returns the number of items in the list which is 2
+    </script>
+  </body>
+</html>

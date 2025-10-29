@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Changing Content and Attributes</title>
+  </head>
+  <body>
+    <h1 id="myHeading">Original Heading Text</h1>
+    <!--Heading that will change-->
+    <p id="myParagraph">This is the original paragraph content.</p>
+    <!--Paragraph that will change-->
+    <img id="myImage" src="orca.jpg" alt="Orca jumping out of the water" />
+    <!--Image with attributes-->
+    <br /><br />
+    <a id="myLink" href="https://en.wikipedia.org/wiki/Orca"
+      >Visit to learn more!</a
+    >
+    <!--Link that will be modified-->
+
+    <script>
+      // Changing inner HTML (allows HTML tags)
+      const headingElement = document.getElementById("myHeading");
+      headingElement.innerHTML =
+        "<strong>New <em>updated</em> heading </strong>"; // The content of heading element is updated and styled differently, with bolded and italicized text
+
+      //Change text content - plain text only
+      const paragraphElement = document.getElementById("myParagraph");
+      paragraphElement.textContent =
+        "The paragraph content has been changed to plain text."; //The content of paragraph element has been replaced with new text.
+
+      //Change image attributes
+      const imageElement = document.getElementById("myImage");
+      imageElement.setAttribute("src", "https://picsum.photos/id/237/150/150"); // The original image is replaced by another one
+      imageElement.setAttribute("alt", "Cute dog picture"); // Image alternative text is updated to match the new image
+
+      //Change link attributes and text
+      const linkElement = document.getElementById("myLink");
+      linkElement.setAttribute("href", "https://en.wikipedia.org/wiki/Dog"); //The original link is replaced with the new one
+      linkElement.setAttribute("target", "_blank"); // The link is set to open in the new tab or window, depending on a browser
+      linkElement.textContent = "Learn more about dogs!"; // The link text is updated as well, to hint the user what is the link about
+    </script>
+  </body>
+</html>

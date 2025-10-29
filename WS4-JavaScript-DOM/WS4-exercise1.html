@@ -1,9 +1,31 @@
 <!DOCTYPE html>
+<!--Declaring HTML 5-->
 <html lang="en">
+  <!-- Setting language of the document-->
   <head>
     <meta charset="UTF-8" />
+    <!-- Supporting special characters-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <!--Makes page responsive on mobile devices-->
+    <title>DOM Introduction</title>
+    <!-- Title that is shown in the browser tab-->
   </head>
-  <body></body>
+  <body>
+    <h1 id="main-title">Welcome to DOM scripting!</h1>
+    <!-- Assigning id to element so that it can be used by JavaScript or CSS. Used for identifying unique elements-->
+    <p class="intro-text">This is an introductory paragraph.</p>
+    <!--Class is also used by JavaScript or CSS but identifies one or multiple elements -->
+
+    <script>
+      //Use Console to debug and inspect the output
+
+      // Using id by JavaScript
+      const titleElement = document.getElementById("main-title"); //Accessing element by using its id (<h1> element in this example)
+      console.log("Title Element: ", titleElement.textContent); //Logs the textual content of the title element
+
+      // Using class by JavaScript
+      const introParagraphs = document.getElementsByClassName("intro-text"); //Accessing the elements by using their class name from HTML Collection
+      console.log("Intro Paragraphs: ", introParagraphs[0].textContent); //Logs the first element within the class, in this case <p> element, which has index [0]
+    </script>
+  </body>
 </html>
