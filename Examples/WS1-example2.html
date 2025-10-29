@@ -1,30 +1,30 @@
 <!DOCTYPE html>
 <html>
-<body> 
-    <h1>Conditionals Example</h1> <!--Variables hold info like age. Conditionals (if) check conditions and do different things, like checking if someone is old enough for something.-->
+  <body>
+    <h1>Conditionals Example</h1>
+    <!--Variables hold info like age. Conditionals (if) check conditions and do different things, 
+    like checking if someone is old enough for something.-->
     <script>
+      // let is used for declaring variable.
+      // In this example variable identifier is "age", and value is set to be 80
+      let age = 18; // Changing variable's value to for example 33 or 18 displays diferent text on the page
 
-        // let is used for declaring variable. 
-        // In this example variable identifyer is "age", and value is set to be 80
-        let age = 18; // Changing variable's value to let's say 33 or 18 displays diferent text on the page
+      // const is used for declaring constant variables
+      // const variables does not allow changing values
+      const order = "Beer";
 
-        // const is used for declaring constant variables
-        // const variables does not allow changing values
-        const order = 'Beer';
-
-        // This is conditional statement. 
-        // If first condition is not fulfilled (if), then we go to the second condition (else if), and then to third (else)
-        // Only one of these conditions can be true at the same time
-        // In this example, a person can be either over 50, between 20 and 50 or under 20)
-        if (age > 50) {
-            document.write("<p> He's over 50! </p>");
-        } else if (age <= 50 && age > 20) {
-            document.write("<p> Middle aged man, who ordered some " + order + "</p>");
-        } else {
-            document.write("<p>It seems you're a bit underaged.</p>");
-        }
-        // document.write() is used to display the output on the console directly in the HTML page
-
+      // This is conditional statement.
+      // If first condition is not fulfilled (if), then we go to the second condition (else if), and then to third (else)
+      // Only one of these conditions can be true at the same time
+      // In this example, a person can be either over 50, between 20 and 50 or under 20)
+      if (age > 50) {
+        document.write("<p> He's over 50! </p>");
+      } else if (age <= 50 && age > 20) {
+        document.write("<p> A man, who ordered some " + order + "</p>");
+      } else {
+        document.write("<p>It seems you're a bit underaged.</p>");
+      }
+      // document.write() is used to display the output on the console directly in the HTML page
     </script>
-</body>
-</html> 
+  </body>
+</html>

@@ -1,41 +1,40 @@
 <!DOCTYPE html>
 <html>
-<body>
-    <h1>Loops & Functions Example</h1> 
+  <body>
+    <h1>Loops & Functions Example</h1>
 
-    <p>Check colsole for the output</p>
+    <p>Check conlsole for the output</p>
     <!-- Loops do something many times, like checking ages from 16 to 20. -->
-    <!-- Functions are reusable recipes, like a check age machine. --> 
-    
+    <!-- Functions are reusable recipes, like a check age machine. -->
+
     <script>
-
-        // This function checks if an age is 18 or over
-        // Input of this function is age and value is an integer number
-        // Output of this function is conditional statement (if - else) and value is Boolean (true or false)
-        // This function checks only tell us if a person is 18 or older, or under 18
-        function areYouOldEnough(age) {
-            if (age >= 18) {
-                return true;
-            } else {
-                return false;
-            }
+      // This function checks if an age is 18 or over
+      // Input of this function is age and value is an integer number
+      // Output of this function is conditional statement (if - else) and value is Boolean (true or false)
+      // This function checks only tell us if a person is 18 or older, or under 18
+      function areYouOldEnough(age) {
+        if (age >= 18) {
+          return true;
+        } else {
+          return false;
         }
-    
-        // This loop checks a few different ages
-        // Let's say we are checking the age of a person who can apply to a certain school (applicants are from from 14 to 25 year old)
-        // It starts at 14 and increase by 1 each time (i++ is the same as i+=1) until it reaches number 25.
-        // Inside the loop, we call areYouOldEnough function, to filter applicants that are between 18 and 25 year old
-        // When loop reaches number 25 it stops. 
-        // If the condition of the loop is not properly defined, we get infinite loop, which should always be avoided
-        // console.log is used here to display results in console
+      }
 
-        for (let i = 14; i <= 25; i++) {
-            if (areYouOldEnough(i)) {
-                console.log("A person of age " + i + " is of accepted age.");
-            } else {
-                console.log("A person of age " + i + " is NOT of accepted age.");
-            }
+      // This loop checks a few different ages
+      // Let's say we are checking the age of a person who is eligible to study at a certain school (all applicants are from from 14 to 25 year old)
+      // It starts at 14 and increase by 1 each time (i++ is the same as i+=1) until it reaches number 25.
+      // Inside the loop, we call areYouOldEnough function, to filter applicants that are between 18 and 25 year old
+      // When loop reaches number 25 it stops.
+      // If the condition of the loop is not properly defined, we get infinite loop, which should always be avoided
+      // console.log is used here to display results in console
+
+      for (let i = 14; i <= 25; i++) {
+        if (areYouOldEnough(i)) {
+          console.log("A person of age " + i + " is of accepted age.");
+        } else {
+          console.log("A person of age " + i + " is NOT of accepted age.");
         }
+      }
     </script>
-</body>
+  </body>
 </html>
