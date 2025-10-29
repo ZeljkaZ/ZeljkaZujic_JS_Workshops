@@ -8,21 +8,21 @@
     <!--Getting the button element by its ID-->
     <script>
       var element = document.getElementById("a");
-      // Using onclick property. Only one function can be used at a time
+      // When using onclick property, only one function can be used at a time
       element.onclick = function () {
         alert("First!");
       };
       element.onclick = function () {
         alert("Second!");
-      }; // Only this one will run
+      }; // Because we are using onclick, the second function overwrites the first
 
-      // Using addEventListener. We can add many functions to the same event
+      // With addEventListener we can add many functions to the same event (stack them) to appear one after the other
       element.addEventListener("click", function () {
-        // This one will go first
+        // This one will go next, after onclick function
         alert("Third!");
       });
       element.addEventListener("click", function () {
-        // This one will replace the first one
+        // This one will follow the previous one
         alert("Fourth!");
       });
     </script>

@@ -7,7 +7,7 @@
   </head>
   <body>
     <h1 id="myH1">Click me!</h1>
-    <!--This i the element that wil respond on clicks-->
+    <!--This is the element that will respond on click-->
     <button onclick="removeListener()">Remove Listener</button>
     <script>
       // Button to remove listener by clicking on it
@@ -18,7 +18,7 @@
       }
       // Attach the click event listener to the chosen element (h1)
       element.addEventListener("click", sayHello);
-      // Function callec by the button to remove the listener
+      // Function called by the button to remove the listener
       function removeListener() {
         element.removeEventListener("click", sayHello);
         console.log("Listener removed!"); // Confirmation is loged to console
