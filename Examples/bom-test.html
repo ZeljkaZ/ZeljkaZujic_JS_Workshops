@@ -1,30 +1,35 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>BOM Test</title>
-</head>
-<body>
-  <h1>Browser Info Demo</h1>
+  <head>
+    <title>BOM Test</title>
+  </head>
+  <body>
+    <h1>Browser Info Demo</h1>
 
-  <script>
-    // Show browser info on the page
-    document.write("Your browser info: " + navigator.userAgent + "<br>");
+    <script>
+      // Show browser info on the page
+      // The Navigator is a built-in browser object that holds information about the browser
+      // navigator.userAgent is a string that describes our browser and operating system
+      document.write("Your browser info: " + navigator.userAgent + "<br>");
 
-    // Log browser info in the console as well
-    console.log("Navigator object:", navigator);
+      // Log browser info in the console as well
+      console.log("Navigator object:", navigator);
 
-    console.log(window.innerWidth); // Browser inner width
-    console.log(window.screen.width); // Screen width
-  </script>
+      // This allows inapecting the difference between the window and the actual device screen
+      console.log(window.innerWidth); // Browser inner width
+      console.log(window.screen.width); // Screen width
+    </script>
 
-  <!-- History buttons -->
-   <h2>Back/Forward navigation demo</h2>
-  <button onclick="history.back()">Back</button>
-  <button onclick="history.forward()">Forward</button>
+    <!-- History buttons -->
+    <!-- A browser object that keeps track of the pages visited in the current tab.-->
+    <h2>Back/Forward navigation demo</h2>
+    <button onclick="history.back()">Back</button>
+    <button onclick="history.forward()">Forward</button>
 
-  <h2>Location Demo</h2>
-  <button onclick="location.href='https://www.google.com'">Go to Google</button>
-
-
-</body>
+    <!-- Location browser object that represents the current page URL. -->
+    <h2>Location Demo</h2>
+    <button onclick="location.href='https://www.google.com'">
+      Go to Google
+    </button>
+  </body>
 </html>

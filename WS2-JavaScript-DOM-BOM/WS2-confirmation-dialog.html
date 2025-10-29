@@ -1,27 +1,30 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Confirmation Dialog Exercise</title>
-</head>
-<body>
-  <h1>Confirmation Dialog Exercise</h1>
-  <p><strong>Instructions: </strong>confirm("Are you a student?"), display true/false. Explanation: confirm shows yes/no box; returns boolean. Use innerHTML to show on page.</p>
+  <head>
+    <title>Confirmation Dialog Exercise</title>
+  </head>
+  <body>
+    <h1>Confirmation Dialog Exercise</h1>
+    <p>
+      <strong>Instructions: </strong>confirm("Are you a student?"), display
+      true/false. Explanation: confirm shows yes/no box; returns boolean. Use
+      innerHTML to show on page.
+    </p>
 
-  <h1>Are you a student?</h1>
+    <h1>Are you a student?</h1>
 
-  <!-- Displaying the results inside this p element -->
-  <p id="result">Answer goes here!</p>
+    <!-- Displaying the results inside this p element -->
+    <p id="result">Answer goes here!</p>
 
-  <script>
-    // Confirmation dialog
-    // let is used to initialize (declare) a variable, which is in this case named studentStatus
-    // confirm in function in JavaScript that show pop-up box in the browser, with the question and ok/cancel options
-    let studentStatus = confirm("Are you a student?");
+    <script>
+      // Confirmation dialog
+      // let is used to initialize (declare) a variable, which is in this case named studentStatus
+      // confirm in function in JavaScript that shows a pop-up box in the browser, with the question and ok/cancel options
+      let studentStatus = confirm("Are you a student?");
 
-    // Display the result in the paragraph with id="result"
-    // This is the demonstration of using the DOM - finding a paragraph with id="results" inside html document
-    document.getElementById("result").innerHTML = "Answer: " + studentStatus;
-</script>
-
-</body>
+      // Display the result in the paragraph with id="result"
+      // This is the demonstration of using the DOM - finding a paragraph with id="results" inside html document
+      document.getElementById("result").innerHTML = "Answer: " + studentStatus;
+    </script>
+  </body>
 </html>

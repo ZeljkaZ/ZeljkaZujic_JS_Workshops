@@ -1,16 +1,30 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Document Write Exercise</title>
-</head>
-<body>
-    <h1>This is my 1st exercise for Workshop 2</h1> <!-- I added some text there, so that it appears in the browser-->
-    <p>Explanation: <strong>document.write</strong> adds text directly to page. Simple but overwrites if used after load.</p>
+  <head>
+    <title>Document Write Exercise</title>
+  </head>
+  <body>
+    <h1>This is my 1st exercise for Workshop 2</h1>
+    <!-- I added some text there, so that it appears in the browser-->
+    <p>
+      Explanation: <strong>document.write</strong> adds text directly to page.
+      Simple but overwrites if used after load.
+    </p>
+    <br />
+
+    <h2 style="color: red"><strong>Note!</strong></h2>
+    <p>
+      Here is the demonstration what happens if document.write is used after the
+      page is fully loaded
+    </p>
+    <p>Click on the button to demonstrate.</p>
+    <button onclick="document.write('Page replaced!')">Click me</button
+    ><br /><br />
+
     <script>
-        document.write("Hello, this is my first DOM manipulation exercise.")
-        // I used live server to inspect the changes. This line was added under the existing heading and paragraph.
+      document.write("Hello, this is my first DOM manipulation exercise.");
+      // I used live server to inspect the changes. This line was added under the existing heading and paragraph.
+      // If document.write runs after the page has finished loading, it replaces everything on the page with the new content.
     </script>
-
-
-</body>
+  </body>
 </html>
